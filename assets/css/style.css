@@ -1,0 +1,1041 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+.li{
+    text-decoration: none;
+}
+body {
+  font-family: "Nunito Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: normal;}
+
+  /* start header section (first nav) */
+.first-header{
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+.expanded-nav1{
+display:none
+}
+.expanded-nav-icon{
+  display: inline-block;
+}
+#navbarToggleExternalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  height: 100%;
+}
+.Fnav form button{
+  background-color: #0083c4;
+  color: white;
+}
+.Fnav form button:hover{
+  background-color:#3f3f3f;
+  color: white;
+}
+.Fnav form a{
+  color: #797979;
+}
+.Fnav form a:hover{
+  color:#0083c4;
+}
+.Fnav form input:hover{
+  border-color:#bbb;
+}
+.Fnav form {
+  display: none;
+}
+
+.login:hover +  .Fnav form {
+  background-color: #CC181E;
+  visibility: visible;
+}
+.items-card{
+  display:none;
+}
+.number{
+  color: #0083c4;
+}
+.header-four-menu{
+  
+  display:none;
+
+}
+
+
+
+
+@media (min-width: 1400px) {
+  
+.expanded-nav1{
+  display:inline;
+}
+.expanded-nav-icon{
+  display: none;
+}
+.items-card{
+  display:inline;
+}
+.header-four-menu{
+  
+  display:inline;
+
+}}
+@media (max-width:800px) {
+
+.shop-menu{
+  display: none;
+}
+
+}
+
+
+
+/* start nav2 */
+.fd .btn{
+    border-radius: 0;
+    border-color: #0083c4 !important;
+}
+.fd input{
+  border-color: #0083c4;
+}
+.fd .vr{
+  width: .01px !important;
+  padding-right: 13px!important;
+  opacity: .1 !important;
+  
+}
+.fd .dropdown-menu{
+  border-color: #0083c4;
+}
+.fd .dropdown-toggle::after {
+  
+  margin-left: 3em !important;
+  
+}
+
+.btn:hover{
+  border-color: #0083c4 !important;
+}
+.fd .dropdown-menu{
+  overflow-y: scroll;
+  max-height: 250px;
+  max-width: 80%;
+}
+.fd input[type="text"]::before {
+  content: "\f002"; /* Unicode for search icon */
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+
+
+
+
+.b0 .b1{
+    background-color: #0083c4;
+}
+.b0:hover{
+  background-color: black;
+}
+.b0 i {
+    color: white;
+}
+.b0 {
+    border-color: #0083c4;
+}
+/* end nav 2 */
+
+
+
+/* start header 3 */
+
+
+.dropdown-toggle::after {
+ 
+  margin-left: -1em;
+ 
+}
+
+.header-three a{
+    color: white;
+}
+.header-three a:hover{
+  color:#0083c4;
+}
+.header-three button , .section-twelve button{
+    background-color: #0083c4;
+    border-radius: 0%;
+    color: white;
+
+}
+.header-three button:hover{
+  color: white;
+  background-color: #0083c4;
+}
+.d2 button{
+   
+        background-color: #0083c4;
+        border-radius: 0%;
+        color: white;
+    
+}
+
+/* start header four  */
+
+.header-four ul{
+    list-style-type: none;
+
+}
+.header-four a:hover{
+  color: #0083c4;
+
+}
+
+.header-img .overlay0::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-color: red;
+  border-width: 100px;
+  background-color:rgba(0, 0, 0, 0.1) ;
+  opacity: 1;
+  
+}
+.border {
+  border: 70px  red!important;
+}
+
+
+.section-five .s1 button{
+    background-color: #fff;
+    color: #bbb;    
+    border-color: #ccc;
+    border-width: 1px;
+   
+    }
+.text-spacing{
+ letter-spacing: .2px;
+ font-size: 10px;
+ color: black;
+ width: 75%;
+ 
+
+}
+
+.carousel-item.left-to-right {
+  animation: slideInLeft 0.5s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+.carousel-item.slide-from-top {
+  animation: slideFromTop 0.5s ease;
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+  .card-body {
+ 
+    min-width: 300px;
+    margin-right: 5px;
+  
+}
+
+.card-group {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  transition: transform 0.5s ease-in-out; /* Add transition effect for smooth scrolling */
+
+}
+.card h5{
+  font-size: 13px;
+}
+.section-five {
+  overflow: hidden;
+}
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.card {
+  flex: 1 0 15%; /* Set width of cards to 15% of container */
+  width: 200px; /* adjust to your card width */
+  margin-right: 10px; /* adjust to your spacing */
+}
+.card:not(:first-child) {
+  margin-left: 10px; /* Add margin between cards */
+}
+
+.s1 {
+  position: relative; /* Set position to relative for button placement */
+}
+.overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  
+}
+/* .overlay:hover{
+  opacity: 1;
+  
+
+} */
+.card-content:hover .overlay1{
+  opacity: 1;
+}
+
+/* section six */
+.section-six h3{
+  background-color: #e72304;
+  color: white;
+  font-size: 24px;
+
+}
+#timer{
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+  margin-left: 10%;
+
+}
+#timer div{
+  
+  background-color: #f7f7f7;
+  color:#666;
+  position: relative;
+  width:50px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 12px;
+}
+#timer span{
+  font-weight: 600;
+
+font-size: 20px;
+}
+.review p {
+  display: block;
+}
+.stars{
+  color: #ffad00;
+  font-size: 10px;
+  display: flex;
+  justify-content: start;
+  align-items:start;
+ 
+}
+.carousel-inner .stars{
+  justify-content: center;
+
+
+}
+.priceAfter{
+  font-size: 20px;
+  color: #0083c4;
+}
+.section-six button{
+  border-radius: 0;
+  color:#797979
+}
+
+.product{
+  height: 12%;
+}
+  .ftco-footer-social2 li a , .ftco-footer-social3 li a{
+  
+  height: 35px;
+  width: 35px;
+  
+  padding: 20%;
+  margin-bottom: 5%;
+  border-radius: 0;
+  color: #bbb;
+  height: 40px;
+  width: 40px;
+  display: block;
+  background: white;
+  position: relative;
+  padding: 20%;
+  margin-bottom: 10%;
+
+
+}
+.sec-six-nav a{
+  font-size: 20px;
+  font-weight: 600;
+}
+.section-six .nav-tabs{
+  border-color: #0083c4;
+  border-width: 2px;}
+  .section-six .nav-link{
+    color: black; 
+  }
+
+.section-six .Best-Seller {
+  background-color: #0083c4 !important;
+  color: white !important;
+  border-color: #0083c4 !important;
+  margin: 0;
+
+}
+/* start section seven  */
+
+
+.section-seven h2{
+  font-size: 50px;
+}
+.section-seven h3{
+  font-size: 15px;
+}
+.section-seven .btn1:hover{
+  background-color: #0083c4;
+  color: white;
+}
+.section-seven .btn1{
+  background-color: white;
+  color: black;
+}
+.section-seven .btn2:hover{
+  background-color: white;
+  color: black;
+}
+.section-seven .btn2{
+  background-color: black;
+  color: white;
+}
+
+.section-six .ftco-footer-social2 , .ftco-footer-social3 {
+  position: absolute;
+  right:-100%;
+  
+}
+ .ftco-footer-social3 {
+  position: absolute;
+  right:-100% !important;
+  margin-top: 8%;
+  
+}
+.six-btn-1{
+  top:30%;
+  left: -10%;
+  right: -0%;
+  bottom: 0%;
+  opacity: 1;
+}
+.six-btn-2{
+  top:30%;
+  left: 0%;
+  right: 100%;
+  bottom: 0%;
+  opacity: 1;
+  z-index: 99999;
+
+}
+.six-card:hover .six-btn-1{
+  top:30%;
+  left: 10%;
+  right: 100%;
+  bottom: 0%;
+  transition:  0.7s ease;
+  opacity: 1;
+  z-index: 99999;
+}
+.six-card:hover .six-btn-2{
+  top:50%;
+  left: 0%;
+  right: 100%;
+  bottom: 0%;
+  transition:  0.7s ease;
+  opacity: 1;
+  z-index: 99999;
+}
+.section-six .carousel-inner button{
+height: 8%; 
+width: 12%;
+top:30%;
+} 
+.icon1{
+  font-size: 20px;
+  color: #797979;
+}
+
+
+
+
+.section-six .product-card:hover .ftco-footer-social2 ,.section-six .product-card:hover .ftco-footer-social3{
+  display: block;
+  right: 20%;
+  transition: .2s;
+  
+}
+.section-six .product-card:hover .ftco-footer-social3{
+  right: 5% !important;
+  
+}
+.section-six .card-body p{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* end section seven  */
+.section-eight .font , .section-ten .font{
+  font-size: 30px;
+  background-color: #0083c4;
+}
+.section-ten .font{
+  background-color: #ffbb3d;
+}
+
+
+.section-eight .products2  , .section-ten .products2{
+  height: 230px; /* or any other value you want */
+}
+.section-eight .card-text , .section-ten .card-text{
+  font-size: 14px;
+  font-weight: 500;
+}
+.section-eight a ,  .section-ten a{
+  font-weight: 500;
+}
+.hot{
+  background-color: #72b728;
+  color: white;
+  font-weight: 600;
+  position:absolute;
+  left: 0;
+  top:10px;
+  height: 30px;
+}
+.section-eight .card , .section-ten .card{
+  position: relative;
+}
+.hot::before{
+   
+    content:""; 
+    position: absolute;
+    left: 100%;
+    top: 0px; 
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid #72b728; 
+    border-bottom: 15px solid transparent; 
+}
+.hot::after{
+   
+  content:""; 
+  position: absolute;
+  left: 100%;
+  bottom: 0px; 
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid #72b728; 
+  border-top: 15px solid transparent;}
+  .sale{
+    background-color: #0083c4;
+
+  }
+  .sale::before{
+   
+  
+    border-left: 10px solid #0083c4; 
+}
+.sale::after{
+   
+  
+  border-left: 10px solid #0083c4; 
+  }
+  .soldOut{
+    background-color: #d4d4d4;
+    font-size: 13PX;
+    width: 90px;
+  }
+  .soldOut::before{
+    border-left: 10px solid #d4d4d4; 
+  }
+  .soldOut::after{
+    border-left: 10px solid #d4d4d4; 
+  }
+.triangular::after{
+  content:""; 
+  position: absolute;
+  left: 13.3%;
+  bottom: 0px; 
+  width: 0; 
+  height: 0; 
+  top: 0;
+  margin-left: 3px ;
+  border-left: 15px solid #0083c4; 
+  border-top: 30px solid transparent;
+  border-bottom: 29px solid transparent;
+
+  }
+  .triangulars2::after{
+    content:""; 
+  position: absolute;
+  left: 13.3%;
+  bottom: 0px; 
+  width: 0; 
+  height: 0; 
+  top: 0;
+  margin-left: 3px ;
+  border-top: 30px solid transparent;
+  border-bottom: 29px solid transparent;
+    border-left: 15px solid #ffbb3d; 
+
+  }
+
+  .ELECTRONIC{
+    position: relative;
+  }
+  .section-nine {
+    background-color: rgb(240, 240, 240);
+  }
+
+/* start section ten */
+
+.product-card .card-img2{
+ display: none;
+ 
+}
+.product-card:hover .card-img1 {
+  display: none;
+}
+.product-card:hover .card-img2 {
+  display: inline-block;
+
+}
+.product-card:hover .ftco-footer-social2  {
+  display: block;
+  right: 30%;
+  transition: .2s;
+  
+}
+.ftco-footer-social2 ,.ftco-footer-social3 {
+  position: absolute;
+  right: 0%;
+  
+}
+
+.nav-content-ten li:hover{
+  color: #ffbb3d;
+}
+.triangle{
+  position:absolute;
+  top: 140%;
+  left: 30%;
+}
+
+
+.ftco-footer-social2 li , .ftco-footer-social3 li{
+  list-style: none;
+  margin: 0 10px 0 0;
+  display: block;
+ 
+}
+
+
+.ftco-footer-social2 li a:hover ,.ftco-footer-social3 li a:hover{
+  color: white;
+  background-color: #0083c4;
+
+}
+
+
+
+
+
+
+
+
+/* end section ten */
+
+
+ /* start section elven */
+.section-elven .card-body1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start
+
+
+  
+}
+.section-elven .card-text {
+  word-break: break-word;
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+}
+.section-elven .priceAfter{
+  font-size: 18px;
+}
+.section-elven .priceBefore{
+  font-size: 12px;
+}
+
+
+  .image-container {
+    position: relative;
+    
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    
+  }
+  /* .overlay:hover{
+    opacity: 1;
+    
+
+  } */
+  .card-content:hover .overlay{
+    opacity: 1;
+  }
+  
+
+  .card-text:hover{
+    color: #0083c4;
+  }
+/* end section elven */
+
+/* start section twelve  */
+.section-twelve h2{
+  color: #0083c4;
+  font-weight: 600;
+  font-size: 50px;
+}
+.section-twelve .h3-1{
+font-size: 50px;
+font-weight: 400;
+}
+.section-twelve .h3-2{
+  font-size: 13px;
+}
+/* Add a hover effect to the image when the cursor is over it */
+
+
+.tw-img {
+  transition: transform 0.2s;
+}
+
+.tw-img:hover {
+  transform: scale(1.1) ;
+}
+
+
+
+/* end section twelve */
+
+/* start section thirteen */
+a{
+  text-decoration: none !important;
+}
+.blueCard{
+  background-color: #839ecd;
+
+}
+.yellowCard{
+  background-color: #ffbb3d;
+
+}
+.redCard{
+  background-color: #e72304;
+
+}
+.icon{
+  font-size: 60px;
+  
+}
+.section-thirteen h3{
+  font-size: 18px;
+}
+.section-thirteen p{
+  font-size: 14px;
+}
+/* end section thirteen */
+
+
+/* start footer 1 */
+
+
+
+
+
+.footer1 {
+  background: #272727;
+  padding-bottom: 0;
+}
+footer {
+  padding-top: 5rem;
+  display: block;
+}
+.footer1 .footer-heading {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 5%;
+  
+}
+.logoImg{
+  padding-top: -50px;
+}
+.footer1 .footer-heading .logo {
+  letter-spacing: none;
+  font-size: 16px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.footer1 p {
+  font-size: 14px;
+  color: white;
+}
+.footer1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer1 a:hover {
+color: #0083c4;}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.footer1 .tagcloud a {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.tagcloud a {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 7px;
+  margin-right: 4px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+.footer1 .subscribe-form .form-group {
+  position: relative;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.form-group button{
+  background-color: #0083c4;
+  margin-left: 50%;
+}
+.form-group button:hover{
+  background-color:#3f3f3f ;
+}
+.footer1 .subscribe-form .form-group input {
+  background: #272727;
+  border-color: #bbb;
+  outline: none !important;
+  color: #bbb;
+  font-size: 16px;
+  border-radius: 0;
+}
+
+.rounded-left {
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+}
+
+button, input {
+  overflow: visible;
+}
+input, button, select, optgroup, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.ftco-footer-social li {
+  list-style: none;
+  margin: 0 10px 0 0;
+  display: inline-block;
+  
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+.footer1 .ftco-footer-social li a {
+  border-radius: 0;
+  border: 1px solid #797979;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  display: block;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  position: relative;
+
+}
+
+
+.ftco-footer-social li a span {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.ftco-animate1 a:hover{
+  background-color: #0083c4;
+  color: w;
+}
+
+
+.footer1 .ftco-footer-social .ftco-animate1 a:hover{
+  background-color: #3B5998;
+  border-color: #3B5998;
+}
+
+
+.footer1 .ftco-footer-social .ftco-animate2 a:hover{
+  background-color: #E30761;
+  border-color: #E30761;
+}
+.footer1 .ftco-footer-social .ftco-animate3 a:hover{
+  background-color: #17B3E8;
+  border-color: #17B3E8;
+}
+.footer1 .ftco-footer-social .ftco-animate4 a:hover{
+  background-color: #CC181E;
+  border-color: #CC181E;
+}
+.custom-tooltip1 .tooltip-inner {
+  background-color: #3B5998;
+  color: #ffffff;
+  border: 1px solid #3B5998;
+}
+
+ .custom-tooltip1 .tooltip-arrow::before {
+  background-color: #3B5998;
+}
+
+.custom-tooltip2 .tooltip-inner {
+  background-color: #E30761;
+  color: #ffffff;
+  border: 1px solid #E30761;
+}
+
+ .custom-tooltip2 .tooltip-arrow::before {
+  background-color: black !important;
+  border-color: #E30761 !important;
+}
+.custom-tooltip3 .tooltip-inner {
+  background-color: #17B3E8;
+  color: #ffffff;
+  border: 1px solid #17B3E8;
+}
+
+ .custom-tooltip3 .tooltip-arrow::before {
+  background-color: #17B3E8;
+}
+ .custom-tooltip4 .tooltip-inner {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: 1px solid #ff0000;
+}
+
+ .custom-tooltip4 .tooltip-arrow::before {
+  background-color: #ff0000;
+}
+.form-controll::placeholder {
+  font-style: italic;
+  
+}
+.footer1 .subscribe-form .form-group input::placeholder {
+  color: #bbb;
+}
+.footer1 .subscribe-form .form-group input {
+  color: white;
+}
+
+/* end footer1 */
+
+
+/* start footer 2 */
+
+.footer2{
+  background-color: black;
+  color: white;
+  font-size: 15px;
+}
+.footer2-2{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+
+
+/* end footer 2 */
+
+
+  
